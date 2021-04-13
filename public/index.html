@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-tkc-white">
+    <!-- メニュー -->
+    <header
+      id="header"
+      class="fixed z-50 left-0 right-0 top-8 block xs:px-6 lg:top-16 lg:px-10 xl:px-28"
+    >
+      <nav class="flex items-center justify-between">
+        <!-- 会社ロゴ -->
+        <a class="relative block" href="#"
+          ><svg
+            class="w-48 h-20 overflow-hidden lg:w-full lg:h-full"
+            viewBox="0 0 275 63"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M70.26 17.392H84.148V21.312H79.136V38H75.076V21.312H70.26V17.392ZM93.5822 24.728L93.4702 25.764L94.0863 24.98L100.806 17.392H106.07L97.5582 26.632L106.098 38H100.946L94.5903 29.208L93.5822 30.216V38H89.4662V17.392H93.5822V24.728ZM159.342 17.392V38H155.282V29.628H146.07V38H142.01V17.392H146.07V25.708H155.282V17.392H159.342ZM164.455 31.728C164.455 30.4773 164.744 29.3573 165.323 28.368C165.92 27.3787 166.751 26.604 167.815 26.044C168.879 25.4653 170.101 25.176 171.483 25.176C172.883 25.176 174.096 25.4653 175.123 26.044C176.149 26.604 176.933 27.3787 177.475 28.368C178.035 29.3573 178.315 30.4773 178.315 31.728C178.315 32.9787 178.035 34.108 177.475 35.116C176.933 36.1053 176.149 36.8893 175.123 37.468C174.096 38.0467 172.864 38.336 171.427 38.336C170.083 38.336 168.879 38.0747 167.815 37.552C166.769 37.0293 165.948 36.2733 165.351 35.284C164.753 34.2947 164.455 33.1093 164.455 31.728ZM168.403 31.756C168.403 32.7267 168.683 33.5387 169.243 34.192C169.803 34.8267 170.512 35.144 171.371 35.144C172.285 35.144 173.013 34.8267 173.555 34.192C174.096 33.5387 174.367 32.7267 174.367 31.756C174.367 30.7853 174.096 29.9827 173.555 29.348C173.013 28.6947 172.285 28.368 171.371 28.368C170.512 28.368 169.803 28.6947 169.243 29.348C168.683 29.9827 168.403 30.7853 168.403 31.756ZM182.803 15.908H186.723V38H182.803V15.908ZM197.144 38.336C196.005 38.336 194.988 38.0747 194.092 37.552C193.196 37.0107 192.486 36.236 191.964 35.228C191.46 34.22 191.208 33.0253 191.208 31.644C191.208 30.2627 191.488 29.0867 192.048 28.116C192.608 27.1453 193.373 26.408 194.344 25.904C195.314 25.4 196.416 25.148 197.648 25.148C198.432 25.148 199.178 25.2693 199.888 25.512C200.616 25.7547 201.222 26.128 201.708 26.632V15.908H205.6V38H201.68V36.712C201.082 37.1787 200.41 37.5707 199.664 37.888C198.917 38.1867 198.077 38.336 197.144 38.336ZM198.432 35.032C199.216 35.032 199.869 34.8827 200.392 34.584C200.914 34.2667 201.344 33.8 201.68 33.184V30.188C201.456 29.5907 201.054 29.1147 200.476 28.76C199.897 28.4053 199.216 28.228 198.432 28.228C197.853 28.228 197.312 28.3773 196.808 28.676C196.322 28.956 195.93 29.348 195.632 29.852C195.333 30.356 195.184 30.9347 195.184 31.588C195.184 32.2413 195.333 32.8293 195.632 33.352C195.93 33.8747 196.322 34.2853 196.808 34.584C197.312 34.8827 197.853 35.032 198.432 35.032ZM211.032 25.764H214.952V38H211.032V25.764ZM210.948 21.424C210.948 20.8453 211.172 20.3693 211.62 19.996C212.087 19.6227 212.582 19.436 213.104 19.436C213.627 19.436 214.103 19.6227 214.532 19.996C214.98 20.3693 215.204 20.8453 215.204 21.424C215.204 22.0027 214.98 22.4787 214.532 22.852C214.103 23.2067 213.627 23.384 213.104 23.384C212.582 23.384 212.087 23.2067 211.62 22.852C211.172 22.4787 210.948 22.0027 210.948 21.424ZM223.945 25.764L224.225 27.724C224.655 26.9587 225.261 26.3427 226.045 25.876C226.829 25.4093 227.781 25.176 228.901 25.176C230.059 25.176 231.02 25.5213 231.785 26.212C232.569 26.884 232.971 27.7613 232.989 28.844V38H229.069V30.3C229.051 29.7587 228.901 29.3293 228.621 29.012C228.36 28.676 227.912 28.508 227.277 28.508C226.363 28.508 225.635 28.9373 225.093 29.796C224.571 30.636 224.309 31.7093 224.309 33.016V38H220.389V25.764H223.945ZM244.742 44.16C243.641 44.16 242.708 44.0293 241.942 43.768C241.196 43.5067 240.561 43.1893 240.038 42.816C239.516 42.4427 239.049 42.088 238.638 41.752L240.934 39.064C241.364 39.456 241.858 39.8293 242.418 40.184C242.997 40.5573 243.753 40.744 244.686 40.744C245.62 40.744 246.432 40.5013 247.122 40.016C247.832 39.5493 248.186 38.8587 248.186 37.944V36.208C247.832 36.7867 247.281 37.2907 246.534 37.72C245.788 38.1307 244.817 38.336 243.622 38.336C242.521 38.336 241.494 38.056 240.542 37.496C239.609 36.9173 238.862 36.1427 238.302 35.172C237.742 34.1827 237.462 33.0627 237.462 31.812C237.462 30.524 237.761 29.3853 238.358 28.396C238.956 27.388 239.73 26.5947 240.682 26.016C241.634 25.4373 242.642 25.148 243.706 25.148C244.77 25.148 245.685 25.3067 246.45 25.624C247.234 25.9227 247.813 26.2867 248.186 26.716L248.494 25.764H252.106V38C252.106 39.1947 251.77 40.2493 251.098 41.164C250.426 42.0973 249.53 42.8253 248.41 43.348C247.309 43.8893 246.086 44.16 244.742 44.16ZM241.41 31.7C241.41 32.6707 241.737 33.492 242.39 34.164C243.044 34.8173 243.846 35.144 244.798 35.144C246.366 35.144 247.496 34.528 248.186 33.296V30.3C247.925 29.7027 247.496 29.2267 246.898 28.872C246.301 28.5173 245.601 28.34 244.798 28.34C243.846 28.34 243.044 28.6573 242.39 29.292C241.737 29.908 241.41 30.7107 241.41 31.7Z"
+              fill="#333333"
+            />
+            <path
+              d="M126.037 36.292C125.813 36.4787 125.393 36.7307 124.777 37.048C124.18 37.3653 123.442 37.6453 122.565 37.888C121.688 38.1307 120.717 38.2427 119.653 38.224C118.029 38.1867 116.573 37.8973 115.285 37.356C114.016 36.796 112.933 36.04 112.037 35.088C111.16 34.136 110.488 33.044 110.021 31.812C109.554 30.58 109.321 29.264 109.321 27.864C109.321 25.7733 109.741 23.9253 110.581 22.32C111.421 20.7147 112.588 19.4547 114.081 18.54C115.593 17.6253 117.348 17.168 119.345 17.168C120.726 17.168 121.949 17.3547 123.013 17.728C124.077 18.1013 124.945 18.5027 125.617 18.932L124.021 22.768C123.554 22.4133 122.929 22.0493 122.145 21.676C121.38 21.284 120.493 21.088 119.485 21.088C118.44 21.088 117.46 21.3773 116.545 21.956C115.649 22.5347 114.921 23.3187 114.361 24.308C113.82 25.2787 113.549 26.3893 113.549 27.64C113.549 28.9653 113.801 30.132 114.305 31.14C114.809 32.1293 115.528 32.904 116.461 33.464C117.394 34.024 118.486 34.304 119.737 34.304C120.838 34.304 121.781 34.1267 122.565 33.772C123.349 33.4173 123.946 33.044 124.357 32.652L126.037 36.292ZM255.937 35.984C255.937 35.4053 256.143 34.92 256.553 34.528C256.983 34.136 257.449 33.94 257.953 33.94C258.42 33.94 258.859 34.136 259.269 34.528C259.699 34.92 259.913 35.4053 259.913 35.984C259.913 36.6 259.699 37.0947 259.269 37.468C258.859 37.8227 258.42 38 257.953 38C257.449 38 256.983 37.8227 256.553 37.468C256.143 37.0947 255.937 36.6 255.937 35.984Z"
+              fill="#F50057"
+            />
+            <path
+              d="M63 31.5C63 14.103 48.897 0 31.5 0C14.103 0 0 14.103 0 31.5C0 48.897 14.103 63 31.5 63C48.897 63 63 48.897 63 31.5Z"
+              fill="#333333"
+            />
+            <path
+              d="M21.2378 20.3885C21.1082 20.2585 20.9541 20.1554 20.7846 20.085C20.615 20.0147 20.4332 19.9785 20.2496 19.9785C20.066 19.9785 19.8842 20.0147 19.7146 20.085C19.545 20.1554 19.391 20.2585 19.2614 20.3885L10.4012 29.2456C10.1402 29.5082 9.99371 29.8635 9.99371 30.2338C9.99371 30.6041 10.1402 30.9594 10.4012 31.222L19.2212 40.042C19.487 40.2851 19.8364 40.4163 20.1965 40.4083C20.5566 40.4002 20.8998 40.2536 21.1545 39.9988C21.4092 39.7441 21.5559 39.401 21.5639 39.0409C21.5719 38.6807 21.4408 38.3314 21.1977 38.0656L13.3659 30.2338L21.2378 22.3742C21.3688 22.2442 21.4728 22.0895 21.5438 21.9191C21.6147 21.7487 21.6512 21.566 21.6512 21.3814C21.6512 21.1968 21.6147 21.014 21.5438 20.8436C21.4728 20.6732 21.3688 20.5185 21.2378 20.3885Z"
+              fill="white"
+            />
+            <path
+              d="M52.5772 29.2085L43.7572 20.3885C43.4955 20.1264 43.1404 19.979 42.77 19.9787C42.3997 19.9784 42.0444 20.1253 41.7823 20.3869C41.5202 20.6486 41.3728 21.0037 41.3725 21.3741C41.3722 21.7445 41.519 22.0998 41.7807 22.3619L49.6156 30.1967L41.7437 38.0655C41.5006 38.3314 41.3694 38.6807 41.3774 39.0409C41.3855 39.401 41.5321 39.7441 41.7868 39.9988C42.0415 40.2536 42.3847 40.4002 42.7448 40.4082C43.105 40.4163 43.4543 40.2851 43.7201 40.042L52.5803 31.185C52.842 30.9227 52.989 30.5673 52.989 30.1967C52.989 29.8262 52.842 29.4708 52.5803 29.2085H52.5772Z"
+              fill="white"
+            />
+            <path
+              d="M39.0322 20.0179C38.8854 19.908 38.7184 19.828 38.5407 19.7826C38.363 19.7372 38.1781 19.7272 37.9965 19.7533C37.815 19.7794 37.6404 19.8411 37.4826 19.9347C37.3249 20.0283 37.1872 20.1521 37.0774 20.299L23.6651 38.2107C23.5459 38.357 23.4575 38.5258 23.4053 38.7071C23.353 38.8883 23.3379 39.0783 23.361 39.2656C23.384 39.4528 23.4447 39.6335 23.5394 39.7967C23.634 39.9598 23.7607 40.1022 23.9118 40.2152C24.0629 40.3281 24.2353 40.4094 24.4186 40.454C24.6019 40.4986 24.7924 40.5057 24.9785 40.4748C25.1646 40.4439 25.3425 40.3757 25.5016 40.2743C25.6607 40.1728 25.7976 40.0403 25.9041 39.8846L39.3132 21.9728C39.4232 21.826 39.5032 21.659 39.5486 21.4813C39.594 21.3036 39.6039 21.1187 39.5778 20.9371C39.5517 20.7556 39.4901 20.581 39.3965 20.4232C39.3029 20.2655 39.1791 20.1278 39.0322 20.0179Z"
+              fill="#F50057"
+            />
+          </svg>
+        </a>
+        <!-- メニュー -->
+        <div class="flex items-center justify-center lg:hidden">
+          <a
+            class="mr-4 text-sm font-semibold md:text-base md:font-medium"
+            href="#"
+            >Contact</a
+          >
+          <div
+            class="relative mb-1 py-2.5 w-12 h-12 bg-tkc-red border border-white rounded-full"
+          >
+            <div
+              class="absolute left-1/2 top-2.5 mx-auto my-2 w-6 h-0.5 bg-white transform -translate-x-1/2"
+            ></div>
+            <div
+              class="absolute bottom-2.5 left-1/2 mx-auto my-2 w-6 h-0.5 bg-white transform -translate-x-1/2"
+            ></div>
+          </div>
+        </div>
+        <ul class="relative hidden items-center justify-center lg:flex">
+          <li class="relative">
+            <a href="#" class="relative m-8">
+              <span class="hover:opacity-60 transition duration-300">
+                Services
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative m-8">
+              <span class="hover:opacity-60 transition duration-300">
+                Work
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative m-8">
+              <span class="hover:opacity-60 transition duration-300">
+                Company
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative m-8">
+              <span class="hover:opacity-60 transition duration-300">
+                Recruit
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="relative m-8">
+              <span
+                class="px-8 py-4 text-white bg-tkc-red rounded hover:opacity-60 transition duration-300"
+              >
+                Contact
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- メインコンテンツ -->
+    <main class="block overflow-hidden">
+      <!-- ヘッダートップ -->
+      <div
+        class="relative relative flex flex-col justify-end pb-12 px-6 py-8 h-auto min-h-screen lg:px-10 xl:px-28"
+      >
+        <div
+          class="absolute right-1/2 top-1/3 w-4/5 transform translate-x-1/2 sm:w-120 lg:right-18 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-0 xl:right-36"
+        >
+          <img class="" src="svg/header.svg" alt="" />
+        </div>
+        <div class="flex items-end justify-between pb-12 sm:pb-0">
+          <h1 class="flex flex-wrap items-end">
+            <span
+              class="header-letter block w-full text-7xl font-bold tracking-tighter sm:text-8xl lg:text-9xl"
+              >Digital</span
+            >
+            <span
+              class="header-letter block text-7xl font-bold tracking-tighter sm:text-8xl lg:text-9xl"
+              >Creation</span
+            >
+            <span class="">
+              <svg
+                class="mb-4 ml-2 w-6 text-yellow-400 fill-current sm:mb-6 lg:mb-8"
+                viewBox="0 0 27 27"
+                fill="current"
+              >
+                <path
+                  d="M2.25 9.45C2.24972 7.81913 2.90518 6.25663 4.06892 5.11406C5.23265 3.97149 6.80691 3.3448 8.4375 3.375C10.3695 3.36474 12.213 4.18407 13.5 5.625C14.787 4.18407 16.6305 3.36474 18.5625 3.375C20.1931 3.3448 21.7674 3.97149 22.9311 5.11406C24.0948 6.25663 24.7503 7.81913 24.75 9.45C24.75 15.4755 17.5736 20.025 13.5 23.625C9.43538 19.9946 2.25 15.48 2.25 9.45Z"
+                />
+              </svg>
+            </span>
+          </h1>
+          <p class="hidden m-8 text-xl font-medium lg:block">Scroll</p>
+        </div>
+      </div>
+      <!-- 紹介動画 -->
+      <div class="flex items-center mb-12 md:mb-24">
+        <img
+          class="w-10/12 rounded-r-lg sm:w-11/12 md:w-9/12 lg:w-4/5"
+          src="img/office-image.png"
+          alt=""
+        />
+        <div
+          class="flex flex-col items-center justify-center -m-12 w-24 h-24 bg-gray-900 rounded-full md:-m-20 md:w-40 md:h-40"
+        >
+          <img class="mb-1 pt-4 w-6" src="svg/play.svg" alt="" />
+          <p class="text-white text-xs font-medium md:text-base">Play</p>
+        </div>
+      </div>
+      <!-- 経営理念 -->
+      <div
+        class="flex flex-col items-center justify-center mb-40 px-6 md:mb-48 md:px-24 lg:mb-56"
+      >
+        <div class="mb-8 text-center md:mb-16">
+          <h4
+            class="mb-3 text-tkc-red text-sm tracking-wider md:mb-6 md:text-lg"
+          >
+            Vision
+          </h4>
+          <h2 class="max-w-lg text-2xl tracking-wider md:text-3xl xl:max-w-3xl">
+            ハート揺さぶるテクノロジーで世界を前進させる
+          </h2>
+        </div>
+        <div class="mb-8 text-center md:mb-16">
+          <h4
+            class="mb-3 text-tkc-red text-sm tracking-wider md:mb-6 md:text-lg"
+          >
+            Mission
+          </h4>
+          <h2 class="max-w-lg text-2xl tracking-wider md:text-3xl xl:max-w-3xl">
+            テクノロジーの力で世界中の人々に幸せを
+          </h2>
+        </div>
+        <div class="mb-6 text-center md:mb-12">
+          <p class="max-w-2xl text-sm tracking-wider leading-7 md:text-base">
+            テクノロジーには、世界を前進させる力がある。私たちはビジネスの本質的価値を最大化するため、日々新しい技術を追求しています。
+          </p>
+        </div>
+        <div class="w-56 text-center md:w-64">
+          <a
+            href="#"
+            id="button"
+            class="flex items-center justify-center py-4 bg-tkc-red rounded-full transition duration-500"
+          >
+            <span class="mt-1 text-white text-sm md:text-base">About Us</span>
+            <span>
+              <svg
+                class="ml-4 text-white fill-current"
+                width="19"
+                height="9"
+                viewBox="0 0 19 9"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- 実績 -->
+      <div
+        class="mb-40 px-6 md:mb-48 md:mx-auto md:max-w-3xl lg:mb-64 lg:px-0 lg:max-w-4xl"
+      >
+        <div
+          class="pb-6 md:grid md:gap-x-8 md:grid-flow-col md:grid-flow-row md:pb-24 lg:gap-x-24 xl:gap-x-32"
+        >
+          <div class="pb-12 md:col-start-1 md:px-0 md:py-20">
+            <img
+              class="w-full h-96 rounded-xl shadow-md object-cover md:h-112 xl:h-120"
+              src="img/office-image.png"
+              alt=""
+            />
+            <p class="mt-2 text-gray-400 text-sm font-medium md:text-base">
+              Web Design & Development, Branding Design
+            </p>
+            <h2
+              class="mt-3 text-2xl tracking-wider md:mt-5 md:text-3xl lg:text-4xl"
+            >
+              恵比寿美容皮膚科
+            </h2>
+            <h6 class="mt-1 text-xs tracking-wider md:mt-2 md:text-sm">
+              恵比寿から徒歩5分の非日常空間へようこそ
+            </h6>
+          </div>
+          <div
+            class="pb-12 md:col-start-2 md:px-0 md:py-20 md:transform md:translate-y-12 lg:translate-y-24"
+          >
+            <img
+              class="h-96 rounded-xl shadow-md object-cover md:h-112 xl:h-120"
+              src="img/office-image.png"
+              alt=""
+            />
+            <p class="mt-2 text-gray-400 text-sm font-medium md:text-base">
+              Web Design & Development, Branding Design
+            </p>
+            <h2
+              class="mt-3 text-2xl tracking-wider md:mt-5 md:text-3xl lg:text-4xl"
+            >
+              医療法人社団 慶実会
+            </h2>
+            <h6 class="mt-1 text-xs tracking-wider md:mt-2 md:text-sm">
+              質の高い医療のご提供
+            </h6>
+          </div>
+        </div>
+        <div class="mx-auto w-56 md:w-64">
+          <a
+            href="#"
+            id="button"
+            class="flex items-center justify-center py-4 bg-tkc-red rounded-full transition duration-500"
+          >
+            <span class="mt-1 text-white text-sm md:text-base"
+              >View Our Work</span
+            >
+            <span>
+              <svg
+                class="ml-4 text-white fill-current"
+                width="19"
+                height="9"
+                viewBox="0 0 19 9"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- 事業内容 -->
+      <div
+        class="mb-24 md:flex md:justify-between md:mb-48 md:mx-auto md:max-w-6xl lg:mb-56"
+      >
+        <div class="mb-12 md:mb-0 md:mt-12 md:w-5/12 lg:mt-4 lg:w-1/2">
+          <img class="px-6 w-full md:px-8" src="svg/services-home.svg" alt="" />
+        </div>
+        <div class="px-6 md:w-7/12 lg:w-1/2">
+          <h4
+            class="mb-3 text-tkc-red text-sm tracking-wider md:mb-6 md:text-lg"
+          >
+            Services
+          </h4>
+          <h2 class="mb-6 text-2xl tracking-wider md:mb-12 md:text-3xl">
+            テクノロジーには、ビジネス課題を解決する力があります。
+          </h2>
+          <p
+            class="mb-6 text-sm tracking-wider leading-7 md:mb-12 md:text-base"
+          >
+            TKCは、プロダクト開発、新規事業立ち上げ、ブランド構築、組織支援な
+            ど、クライアント企業の様々なビジネス課題をデザインの力で解決します。
+          </p>
+          <div class="mb-16 mx-auto w-56 text-center md:mx-0 md:w-64">
+            <a
+              href="#"
+              id="button"
+              class="flex items-center justify-center py-4 bg-tkc-red rounded-full transition duration-500"
+            >
+              <span class="mt-1 text-white text-sm md:text-base"
+                >View Services</span
+              >
+              <span>
+                <svg
+                  class="ml-4"
+                  width="19"
+                  height="9"
+                  viewBox="0 0 19 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                    fill="#F2F2F2"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 採用募集・オフィスアクセス -->
+      <div class="mb-8 lg:mb-24">
+        <!-- 背景の球体-->
+        <div class="overflow-hidden">
+          <div class="flex flex-col items-center justify-center">
+            <div class="relative h-56 lg:h-68 xl:h-96">
+              <div
+                class="absolute left-0 top-0 w-150vw h-150vh bg-tkc-red rounded-t-full transform -translate-x-1/2 md:h-200vh"
+              ></div>
+            </div>
+            <div class="relative z-10">
+              <!-- 採用情報コンテンツ -->
+              <div class="mb-12 w-screen md:mb-24">
+                <img
+                  class="mb-12 w-10/12 rounded-r-lg object-cover object-top"
+                  src="img/recruit-image.png"
+                  alt="採用情報　画像"
+                />
+                <h4
+                  class="mb-3 px-6 text-white text-sm tracking-wider md:mb-6 md:text-center md:text-lg"
+                >
+                  Recruit
+                </h4>
+                <h2
+                  class="mb-3 px-6 text-white text-2xl tracking-wider md:mb-6 md:text-center md:text-3xl"
+                >
+                  偉大なプロダクトは、偉大なチームから生まれる。
+                </h2>
+                <p
+                  class="traclomg-wider mb-3 px-6 text-white text-sm leading-7 md:mb-6 md:text-center md:text-base"
+                >
+                  多様性を尊重し、領域を跨ぎ、テクノロジーの力を信じる仲間を探しています。
+                </p>
+                <div class="mb-8 mx-auto w-56 text-center md:mb-16 md:w-64">
+                  <a
+                    href="#"
+                    id="button-red"
+                    class="group flex items-center justify-center py-4 bg-white rounded-full transition duration-500"
+                  >
+                    <span
+                      class="mt-1 text-tkc-red group-hover:text-white text-sm md:text-base"
+                      >View Recruit Info</span
+                    >
+                    <span>
+                      <svg
+                        class="ml-4 text-tkc-red group-hover:text-white fill-current"
+                        width="19"
+                        height="9"
+                        viewBox="0 0 19 9"
+                        fill="current"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <!-- アクセス情報 -->
+              <div class="relative px-6 py-12 md:mx-auto md:px-0 md:max-w-2xl">
+                <a href="#" class="">
+                  <img
+                    class="rounded-lg"
+                    src="img/studio-image.png"
+                    alt="TKC オフィス 画像"
+                  />
+                </a>
+                <h2 class="pb-2 pt-10 text-white text-3xl md:text-5xl">
+                  Tokyo
+                </h2>
+                <a href="#" class="flex items-center text-white font-semibold">
+                  <span class="mr-2"
+                    ><img src="svg/map-pin.svg" alt="マップ　ピン"
+                  /></span>
+                  <span class="underline text-xs md:text-base"
+                    >〒135-0001 東京都中央区日本橋兜町17-2
+                    兜町第6葉山ビル4階</span
+                  >
+                </a>
+                <div class="mt-8 mx-auto w-56 md:mt-24 md:w-64">
+                  <a
+                    href="#"
+                    id="button-red"
+                    class="group flex items-center justify-center py-4 bg-white rounded-full transition duration-500"
+                  >
+                    <span class="mt-1 text-tkc-red group-hover:text-white"
+                      >Access</span
+                    >
+                    <span>
+                      <svg
+                        class="ml-4 text-tkc-red group-hover:text-white fill-current"
+                        width="19"
+                        height="9"
+                        viewBox="0 0 19 9"
+                        fill="current"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="relative h-24 2xl:h-84 sm:h-32 lg:h-40 xl:h-48">
+              <div
+                class="absolute bottom-0 left-0 w-200vw h-150vh bg-tkc-red rounded-b-full transform -translate-x-1/2 md:h-200vh"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ニュース・ブログ -->
+      <div
+        class="mb-20 px-6 md:mb-48 md:mx-auto md:max-w-3xl lg:mb-48 lg:px-0 xl:max-w-5xl"
+      >
+        <div class="mb-12">
+          <!-- ニュース -->
+          <div class="flex items-end justify-between mb-3 md:mb-6">
+            <h2 class="text-tkc-red text-2xl md:text-5xl">News</h2>
+            <span class="flex items-center justify-center text-sm md:text-base">
+              View all
+              <span>
+                <svg
+                  class="mb-1 ml-2 w-4 text-tkc-red fill-current md:w-6"
+                  viewBox="0 0 19 9"
+                  fill="current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </div>
+          <!-- ニュースアイテム -->
+          <div
+            class="md:grid md:gap-x-6 md:gap-y-6 md:grid-cols-2 xl:grid-cols-3"
+          >
+            <div id="cards" class="flex flex-col h-full">
+              <img
+                class="w-full rounded-t-lg"
+                src="img/office-image.png"
+                alt=""
+              />
+              <div class="flex-grow px-2 py-6 bg-white rounded-b-lg">
+                <div class="flex flex-col h-full">
+                  <div>
+                    <span
+                      class="px-4 py-1 text-white text-sm bg-tkc-red rounded-full"
+                    >
+                      Topics
+                    </span>
+                  </div>
+                  <h3 class="mb-auto mt-6 text-lg font-semibold leading-8">
+                    <a href="#">HP公開しました。</a>
+                  </h3>
+                  <time
+                    class="mt-6 text-gray-400 text-sm tracking-wide"
+                    datetime="2021-03-26T14:19:45.000+09:00"
+                    >2021.3.26
+                  </time>
+                </div>
+              </div>
+            </div>
+            <div id="cards" class="flex flex-col h-full">
+              <img
+                class="w-full rounded-t-lg"
+                src="img/office-image.png"
+                alt=""
+              />
+              <div class="flex-grow px-2 py-6 bg-white rounded-b-lg">
+                <div class="flex flex-col h-full">
+                  <div>
+                    <span
+                      class="px-4 py-1 text-white text-sm bg-tkc-red rounded-full"
+                    >
+                      Topics
+                    </span>
+                  </div>
+                  <h3 class="mb-auto mt-6 text-lg font-semibold leading-8">
+                    <a href="#">HP公開しました。</a>
+                  </h3>
+                  <time
+                    class="mt-6 text-gray-400 text-sm tracking-wide"
+                    datetime="2021-03-26T14:19:45.000+09:00"
+                    >2021.3.26
+                  </time>
+                </div>
+              </div>
+            </div>
+            <div id="cards" class="flex flex-col h-full">
+              <img
+                class="w-full rounded-t-lg"
+                src="img/office-image.png"
+                alt=""
+              />
+              <div class="flex-grow px-2 py-6 bg-white rounded-b-lg">
+                <div class="flex flex-col h-full">
+                  <div>
+                    <span
+                      class="px-4 py-1 text-white text-sm bg-tkc-red rounded-full"
+                    >
+                      Topics
+                    </span>
+                  </div>
+                  <h3 class="mb-auto mt-6 text-lg font-semibold leading-8">
+                    <a href="#">HP公開しました。</a>
+                  </h3>
+                  <time
+                    class="mt-6 text-gray-400 text-sm tracking-wide"
+                    datetime="2021-03-26T14:19:45.000+09:00"
+                    >2021.3.26
+                  </time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-12">
+          <!-- ブログ -->
+          <div class="flex items-end justify-between mb-3 md:mb-6">
+            <h2 class="text-tkc-red text-2xl md:text-5xl">Blog</h2>
+            <span class="flex items-center justify-center text-sm md:text-base">
+              View all
+              <span>
+                <svg
+                  class="mb-1 ml-2 w-4 text-tkc-red fill-current"
+                  viewBox="0 0 19 9"
+                  fill="current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.8988 5.375L12.6413 7.64125L13.875 8.875L18.25 4.5L13.875 0.125L12.6413 1.35875L14.8988 3.625H0.75V5.375H14.8988Z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </div>
+          <!-- ブログアイテム -->
+          <div
+            class="md:grid md:gap-x-6 md:gap-y-6 md:grid-cols-2 xl:grid-cols-3"
+          >
+            <div id="cards" class="flex flex-col h-full">
+              <img
+                class="w-full rounded-t-lg"
+                src="img/office-image.png"
+                alt=""
+              />
+              <div class="flex-grow px-2 py-6 bg-white rounded-b-lg">
+                <div class="flex flex-col h-full">
+                  <div>
+                    <span
+                      class="px-4 py-1 text-white text-sm bg-tkc-red rounded-full"
+                    >
+                      Topics
+                    </span>
+                  </div>
+                  <h3 class="mb-auto mt-6 text-lg font-semibold leading-8">
+                    <a href="#">HP公開しました。</a>
+                  </h3>
+                  <time
+                    class="mt-6 text-gray-400 text-sm tracking-wide"
+                    datetime="2021-03-26T14:19:45.000+09:00"
+                    >2021.3.26
+                  </time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 現在のページ -->
+      <div class="bg-white">
+        <div
+          class="flex items-center px-8 h-16 md:mx-auto md:max-w-3xl lg:px-0 xl:max-w-5xl"
+        >
+          <p class="text-sm font-medium">Home</p>
+        </div>
+      </div>
+      <!-- お問い合わせ・求人情報・SNS -->
+      <div class="bg-tkc-red">
+        <div class="md:mx-auto md:max-w-3xl xl:max-w-5xl">
+          <div
+            class="px-6 py-10 md:grid md:gap-x-4 md:grid-cols-2 md:py-20 lg:px-0"
+          >
+            <!-- お問い合わせ -->
+            <div
+              class="flex flex-col items-center justify-center mb-2 py-4 bg-white rounded-full md:mb-0 md:py-14 md:rounded-xl"
+            >
+              <svg
+                class="hidden w-12 text-tkc-red fill-current"
+                viewBox="0 0 31 31"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.5 30.0833C7.44584 30.0833 0.916656 23.5541 0.916656 15.5C0.916656 7.44584 7.44584 0.916656 15.5 0.916656C23.5541 0.916656 30.0833 7.44584 30.0833 15.5C30.0745 23.5505 23.5505 30.0745 15.5 30.0833ZM3.83332 15.7508C3.90233 22.1693 9.14327 27.3264 15.562 27.2921C21.9808 27.2574 27.166 22.0443 27.166 15.6254C27.166 9.20656 21.9808 3.99341 15.562 3.95874C9.14327 3.92441 3.90233 9.08152 3.83332 15.5V15.7508ZM12.5833 22.0625V8.93749L21.3333 15.5L12.5833 22.0625Z"
+                />
+              </svg>
+              <h3
+                class="text-tkc-red text-3xl font-semibold leading-normal md:text-5xl"
+              >
+                Contact
+              </h3>
+              <p
+                class="text-tkc-red text-xs font-semibold md:mt-1 md:text-sm xl:text-base"
+              >
+                お気軽にお問い合わせください
+              </p>
+            </div>
+            <!-- 求人情報 -->
+            <div
+              class="flex flex-col items-center justify-center py-4 bg-white rounded-full md:py-14 md:rounded-xl"
+            >
+              <svg
+                class="hidden w-12 text-tkc-red fill-current"
+                viewBox="0 0 31 31"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.5 30.0833C7.44584 30.0833 0.916656 23.5541 0.916656 15.5C0.916656 7.44584 7.44584 0.916656 15.5 0.916656C23.5541 0.916656 30.0833 7.44584 30.0833 15.5C30.0745 23.5505 23.5505 30.0745 15.5 30.0833ZM3.83332 15.7508C3.90233 22.1693 9.14327 27.3264 15.562 27.2921C21.9808 27.2574 27.166 22.0443 27.166 15.6254C27.166 9.20656 21.9808 3.99341 15.562 3.95874C9.14327 3.92441 3.90233 9.08152 3.83332 15.5V15.7508ZM12.5833 22.0625V8.93749L21.3333 15.5L12.5833 22.0625Z"
+                />
+              </svg>
+              <h3
+                class="text-tkc-red text-3xl font-semibold leading-normal md:text-5xl"
+              >
+                Recruit
+              </h3>
+              <p
+                class="text-tkc-red text-xs font-semibold md:mt-1 md:text-sm xl:text-base"
+              >
+                一緒にテクノロジーの力で日本を元気にしませんか？
+              </p>
+            </div>
+          </div>
+          <!-- SNS -->
+          <div
+            class="flex flex-col items-center justify-between pb-10 px-6 md:flex-row md:pb-20 lg:px-0"
+          >
+            <div class="md:mr-24 lg:mr-12">
+              <h3
+                class="text-center text-white text-2xl font-semibold leading-normal md:mb-2 md:text-left md:text-4xl"
+              >
+                Stay Tuned
+              </h3>
+              <p
+                class="text-center text-white text-xs font-medium tracking-tighter md:text-left md:text-base"
+              >
+                Follow Our Story on Facebook, Twitter, Instagram and Youtube
+              </p>
+            </div>
+            <div class="flex items-center justify-end mt-6 md:mt-0">
+              <svg
+                class="w-8 text-white fill-current md:w-12 lg:w-14"
+                viewBox="0 0 21 20"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.00195312 10.002C0.00311667 14.9214 3.58036 19.1101 8.43895 19.881V12.892H5.90195V10.002H8.44195V7.80204C8.32841 6.75958 8.68447 5.72064 9.41359 4.96698C10.1427 4.21332 11.1693 3.82306 12.215 3.90204C12.9655 3.91417 13.7141 3.98101 14.455 4.10205V6.56104H13.191C12.7558 6.50405 12.3183 6.64777 12.0017 6.95171C11.6851 7.25566 11.5237 7.68693 11.563 8.12404V10.002H14.334L13.891 12.893H11.563V19.881C16.8174 19.0506 20.502 14.2518 19.9475 8.96112C19.3929 3.67041 14.7932 -0.260027 9.48078 0.0172227C4.16831 0.294472 0.0027976 4.68235 0.00195312 10.002Z"
+                />
+              </svg>
+              <svg
+                class="ml-4 w-8 text-white fill-current md:ml-8 md:w-12 lg:ml-10 lg:w-14"
+                viewBox="0 0 22 17"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.995 2.68799C19.8914 2.15208 20.5622 1.30823 20.882 0.313989C20.0397 0.813791 19.118 1.16587 18.157 1.35499C16.8246 -0.0544839 14.7135 -0.397485 13.0034 0.517645C11.2933 1.43277 10.4075 3.37948 10.841 5.26999C7.39062 5.09676 4.17598 3.4669 1.99702 0.785989C0.859855 2.74741 1.44097 5.25477 3.32502 6.51599C2.64373 6.49409 1.97754 6.30963 1.38202 5.97799C1.38202 5.99599 1.38202 6.01399 1.38202 6.03199C1.38241 8.07514 2.82239 9.83507 4.82502 10.24C4.19308 10.4119 3.53022 10.4372 2.88702 10.314C3.45022 12.0613 5.06057 13.2583 6.89602 13.294C5.37585 14.4871 3.49849 15.1342 1.56602 15.131C1.22349 15.1315 0.881226 15.1118 0.541016 15.072C2.50341 16.333 4.78738 17.0023 7.12002 17C10.3653 17.0223 13.484 15.7429 15.7787 13.448C18.0734 11.1531 19.3526 8.03424 19.33 4.78899C19.33 4.60299 19.3257 4.41799 19.317 4.23399C20.1575 3.62659 20.8828 2.87414 21.459 2.01199C20.676 2.35905 19.8455 2.58691 18.995 2.68799Z"
+                />
+              </svg>
+              <svg
+                class="ml-4 w-8 text-white fill-current md:ml-8 md:w-12 lg:ml-10 lg:w-14"
+                viewBox="0 0 19 19"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.00195 18.041C6.54195 18.041 6.25195 18.028 5.29195 17.986C4.54332 17.9614 3.80439 17.8092 3.10695 17.536C1.90026 17.0664 0.946094 16.1119 0.476953 14.905C0.214259 14.205 0.072571 13.4655 0.0579531 12.718C0.00195312 11.76 0.00195312 11.446 0.00195312 9.005C0.00195312 6.538 0.0149531 6.25 0.0579531 5.295C0.0728908 4.54853 0.214574 3.81001 0.476953 3.111C0.945584 1.90253 1.9013 0.947177 3.10995 0.479005C3.8086 0.215207 4.5473 0.0731492 5.29395 0.0590049C6.24895 0.00500488 6.56295 0.00500488 9.00195 0.00500488C11.482 0.00500488 11.767 0.0180049 12.712 0.0590049C13.4605 0.0732715 14.2012 0.215315 14.902 0.479005C16.1103 0.947708 17.0658 1.90288 17.535 3.111C17.8021 3.8202 17.9445 4.57026 17.956 5.328C18.012 6.28601 18.012 6.59901 18.012 9.03901C18.012 11.479 17.998 11.799 17.956 12.746C17.9411 13.4942 17.799 14.2344 17.536 14.935C17.0656 16.1427 16.11 17.0976 14.902 17.567C14.2022 17.8292 13.4631 17.9709 12.716 17.986C11.761 18.041 11.448 18.041 9.00195 18.041ZM8.96795 1.588C6.52195 1.588 6.26795 1.6 5.31295 1.643C4.74294 1.65056 4.17843 1.75575 3.64395 1.954C2.85471 2.25601 2.23018 2.878 1.92495 3.666C1.72517 4.2063 1.61996 4.77698 1.61395 5.353C1.56095 6.322 1.56095 6.576 1.56095 9.005C1.56095 11.405 1.56995 11.696 1.61395 12.659C1.62291 13.2292 1.72805 13.7938 1.92495 14.329C2.23063 15.1165 2.85505 15.738 3.64395 16.04C4.17807 16.2396 4.7428 16.3448 5.31295 16.351C6.28095 16.407 6.53595 16.407 8.96795 16.407C11.421 16.407 11.675 16.395 12.622 16.351C13.1924 16.3441 13.7573 16.2389 14.292 16.04C15.0764 15.7354 15.6969 15.1153 16.002 14.331C16.2014 13.7903 16.3065 13.2193 16.313 12.643H16.324C16.367 11.687 16.367 11.432 16.367 8.98901C16.367 6.54601 16.356 6.289 16.313 5.334C16.304 4.76446 16.1988 4.20052 16.002 3.666C15.6976 2.88058 15.077 2.2593 14.292 1.954C13.7574 1.75475 13.1924 1.64953 12.622 1.643C11.655 1.588 11.402 1.588 8.96795 1.588ZM9.00195 13.624C7.13194 13.6252 5.44537 12.4997 4.72882 10.7725C4.01226 9.04518 4.40686 7.05634 5.72858 5.73347C7.05031 4.4106 9.03882 4.01428 10.7667 4.72934C12.4946 5.4444 13.6215 7.12999 13.622 9C13.6192 11.5511 11.553 13.619 9.00195 13.624ZM9.00195 5.998C7.3451 5.998 6.00195 7.34115 6.00195 8.998C6.00195 10.6549 7.3451 11.998 9.00195 11.998C10.6588 11.998 12.002 10.6549 12.002 8.998C11.9981 7.34275 10.6572 6.00185 9.00195 5.998ZM13.802 5.28501C13.2074 5.2828 12.7269 4.79959 12.728 4.20501C12.7291 3.61043 13.2114 3.12901 13.806 3.12901C14.4005 3.12901 14.8828 3.61042 14.884 4.205C14.8842 4.49187 14.7702 4.76703 14.5672 4.96968C14.3642 5.17234 14.0888 5.2858 13.802 5.28501Z"
+                />
+              </svg>
+              <svg
+                class="ml-4 w-8 text-white fill-current md:ml-8 md:w-12 lg:ml-10 lg:w-14"
+                viewBox="0 0 22 15"
+                fill="current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.006 14.012H10.986C10.924 14.012 4.721 14 3.156 13.575C2.29543 13.3432 1.62335 12.6707 1.392 11.81C1.11058 10.2224 0.974685 8.61235 0.986004 7C0.978734 5.38501 1.11831 3.77271 1.403 2.183C1.64071 1.32151 2.30983 0.645949 3.169 0.4C4.691 0 10.723 0 10.979 0H11C11.063 0 17.282 0.012 18.831 0.437C19.6898 0.670009 20.3605 1.3411 20.593 2.2C20.8834 3.79354 21.0197 5.41134 21 7.031C21.007 8.64403 20.8671 10.2543 20.582 11.842C20.3477 12.7016 19.6752 13.3726 18.815 13.605C17.295 14.008 11.262 14.012 11.006 14.012ZM9.006 4.005L9.00101 10.005L14.213 7.005L9.006 4.005Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- フッター -->
+      <div class="bg-tkc-footer">
+        <div
+          class="pt-6 px-6 bg-tkc-footer md:mx-auto md:pt-12 md:max-w-3xl lg:pt-12 lg:px-0 xl:max-w-5xl"
+        >
+          <div class="items-start justify-between xl:flex xl:pb-12">
+            <div class="hidden flex-col justify-start xl:flex">
+              <h2 class="text-white text-2xl tracking-widest leading-normal">
+                TKC Holding.
+              </h2>
+              <div class="mt-8 w-64 h-48 bg-gray-200"></div>
+              <div class="flex items-center mt-3">
+                <svg
+                  class="mr-4 w-5 text-white fill-current"
+                  viewBox="0 0 14 19"
+                  fill="current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 18.9998C5.73693 17.9224 4.56619 16.7413 3.5 15.4688C1.9 13.5578 8.83662e-07 10.7118 8.83662e-07 7.99981C-0.00141728 5.16735 1.70425 2.6132 4.32107 1.5292C6.93789 0.445211 9.95007 1.04505 11.952 3.04881C13.2685 4.35941 14.0059 6.14219 14 7.99981C14 10.7118 12.1 13.5578 10.5 15.4688C9.43382 16.7413 8.26307 17.9224 7 18.9998ZM7 2.99981C4.23995 3.00311 2.00331 5.23975 2 7.99981C2 9.16581 2.527 11.1848 5.035 14.1858C5.65314 14.9239 6.30902 15.6295 7 16.2998C7.69105 15.6303 8.34724 14.9257 8.966 14.1888C11.473 11.1838 12 9.16481 12 7.99981C11.9967 5.23975 9.76006 3.00311 7 2.99981ZM7 10.9998C5.34315 10.9998 4 9.65666 4 7.99981C4 6.34295 5.34315 4.99981 7 4.99981C8.65686 4.99981 10 6.34295 10 7.99981C10 8.79546 9.68393 9.55852 9.12132 10.1211C8.55871 10.6837 7.79565 10.9998 7 10.9998Z"
+                  />
+                </svg>
+                <p class="text-white font-medium leading-normal">
+                  〒103-0026 <br />
+                  東京都中央区日本橋兜町17-2 <br />
+                  兜町第六葉山ビル 4階
+                </p>
+              </div>
+              <div class="flex items-center mt-3">
+                <svg
+                  class="mr-4 w-5 text-white fill-current"
+                  viewBox="0 0 18 18"
+                  fill="current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.74214 5.68189C4.66901 6.59373 4.27576 8.25671 5.20237 9.59081C6.06948 10.8392 7.16175 11.9313 8.4099 12.798C9.74405 13.7244 11.407 13.3311 12.3187 12.2579L12.3289 12.2626C13.4934 12.8021 14.7304 13.1718 16 13.3603V16L15.9989 16L15.9961 16C8.02151 16.0113 1.99148 9.91112 2.00001 2.00359V2H4.63937L4.63954 2.00117C4.828 3.27065 5.19761 4.50654 5.73714 5.67108L5.74214 5.68189ZM15.9989 18H17C17.5523 18 18 17.5523 18 17V12.4977C18 12.0021 17.637 11.5813 17.1468 11.5086L16.2926 11.3818C15.2123 11.2215 14.1605 10.9069 13.1695 10.4478L12.4166 10.0991C11.9804 9.897 11.462 10.034 11.1826 10.4253L10.8418 10.9024C10.5431 11.3206 9.97278 11.4484 9.55065 11.1552C8.49835 10.4245 7.57607 9.50243 6.84502 8.44989C6.55181 8.02774 6.67955 7.45737 7.09783 7.15866L7.57477 6.81807C7.96609 6.53861 8.10311 6.02021 7.90097 5.5839L7.55184 4.83033C7.09274 3.8394 6.77823 2.78774 6.61786 1.70749L6.49104 0.853159C6.41827 0.362959 5.99745 0 5.50188 0H1.00001C0.447726 0 1.02262e-05 0.447715 1.02262e-05 1V2.00143C-0.00970936 11.0079 6.91023 18.0129 15.9989 18Z"
+                  />
+                </svg>
+                <p class="text-white font-medium leading-normal">
+                  090-7282-5497
+                </p>
+              </div>
+              <div class="flex items-center mt-3">
+                <svg
+                  class="mr-4 w-5 text-white fill-current"
+                  viewBox="0 0 20 16"
+                  fill="current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 16H2C0.89543 16 0 15.1046 0 14V1.913C0.0466084 0.842548 0.928533 -0.00101238 2 9.11911e-07H18C19.1046 9.11911e-07 20 0.895432 20 2V14C20 15.1046 19.1046 16 18 16ZM2 3.868V14H18V3.868L10 9.2L2 3.868ZM2.8 2L10 6.8L17.2 2H2.8Z"
+                  />
+                </svg>
+                <p class="text-white font-medium leading-normal">
+                  info@tkc-holding.com
+                </p>
+              </div>
+            </div>
+            <div class="py-4 xl:hidden">
+              <a
+                class="text-white text-2xl tracking-widest leading-normal"
+                href="#"
+                >TKC Holding.</a
+              >
+            </div>
+            <nav
+              class="py-4 w-full border-b border-t border-gray-600 xl:pt-1 xl:w-2/3 xl:border-0"
+            >
+              <ul class="flex flex-col items-start justify-between md:flex-row">
+                <li
+                  class="flex flex-row items-start justify-between w-full text-center md:flex-col"
+                >
+                  <a
+                    class="py-3 text-left text-white text-2xl md:pb-6 md:pt-0 md:text-center md:text-base"
+                    href="#"
+                  >
+                    Services
+                  </a>
+                  <a class="pr-3 text-white text-3xl md:hidden" href="#">+</a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    Web・アプリ開発
+                  </a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    プログラミングスクール
+                  </a>
+                </li>
+                <li class="flex flex-col w-full text-center">
+                  <a
+                    class="py-3 text-left text-white text-2xl md:pb-3 md:pt-0 md:text-center md:text-base"
+                    href="#"
+                  >
+                    Work
+                  </a>
+                </li>
+                <li
+                  class="flex flex-row items-start justify-between w-full text-center md:flex-col md:pl-8"
+                >
+                  <a
+                    class="py-3 text-left text-white text-2xl md:pb-6 md:pt-0 md:text-center md:text-base"
+                    href="#"
+                  >
+                    Company
+                  </a>
+                  <a class="pr-3 text-white text-3xl md:hidden" href="#"> + </a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    会社概要
+                  </a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    CEOメッセージ
+                  </a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    役員紹介
+                  </a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    TKCの文化
+                  </a>
+                  <a
+                    class="hidden py-2 text-left text-gray-500 text-sm md:block"
+                    href="#"
+                  >
+                    アクセス
+                  </a>
+                </li>
+                <li class="flex flex-col w-full text-center">
+                  <a
+                    class="py-3 text-left text-white text-2xl md:pb-3 md:pt-0 md:text-center md:text-base"
+                    href="#"
+                  >
+                    Recruit
+                  </a>
+                </li>
+                <li
+                  class="flex flex-row items-end justify-between w-full text-center md:flex-col"
+                >
+                  <a
+                    class="py-3 text-left text-white text-2xl md:pb-3 md:pt-0 md:text-center md:text-base"
+                    href="#"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="py-6 border-gray-600 md:py-10 xl:border-t">
+            <p class="text-gray-500 text-sm md:text-center">
+              ©︎ 2021 TKC Holding Co., Ltd All Rights Reserved.
+              <span class="underline">
+                <a class="text-white" href="#">Here is our Privacy Policy</a>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript">
+      let new_scroll_position = 0;
+      let last_scroll_position = 0;
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function (e) {
+        last_scroll_position = window.scrollY;
+
+        // Scrolling Down
+        if (
+          new_scroll_position < last_scroll_position &&
+          last_scroll_position > 80
+        ) {
+          header.classList.remove("slideDown");
+          header.classList.add("slideUp");
+
+          // Scrolling up
+        } else if (new_scroll_position > last_scroll_position) {
+          header.classList.remove("slideUp");
+          header.classList.add("slideDown");
+        }
+
+        new_scroll_position = last_scroll_position;
+      });
+    </script>
+  </body>
+</html>

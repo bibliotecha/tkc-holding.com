@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-tkc-white">
+    <main>
+      <!-- ページタイトル -->
+      <div
+        class="mb-12 mt-40 px-6 md:mb-16 md:mx-auto md:max-w-3xl lg:mb-24 lg:mt-68 lg:px-0 xl:max-w-5xl"
+      >
+        <h1>
+          <span class="block text-5xl font-bold tracking-tighter md:text-8xl"
+            >Contact</span
+          >
+        </h1>
+        <p class="mt-1 text-sm font-bold leading-normal md:text-xl">
+          お問い合わせ
+        </p>
+      </div>
+
+      <!-- お問い合わせフォーム -->
+      <div
+        class="mb-12 px-6 bg-white md:mb-24 md:mx-auto md:max-w-3xl md:rounded-lg lg:px-0 xl:max-w-5xl"
+      >
+        <!-- 入力・確認・完了ステートメント -->
+        <div class="flex items-start justify-center py-12">
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="relative w-12 h-12 bg-tkc-red border-2 border-tkc-red rounded-full box-content md:w-14 md:h-14"
+            >
+              <span
+                class="absolute left-1/2 top-1/2 mt-0.5 text-white transform -translate-x-1/2 -translate-y-1/2"
+              >
+                01
+              </span>
+            </div>
+            <span class="mt-2 text-center text-xs font-bold md:mt-3 md:text-sm"
+              >入力</span
+            >
+          </div>
+          <div
+            class="flex items-center justify-center w-12 h-12 md:w-16 md:h-14"
+          >
+            <div class="w-12 h-0.5 bg-gray-400 md:w-16"></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="relative w-12 h-12 bg-tkc-red border-2 border-tkc-red rounded-full box-content md:w-14 md:h-14"
+            >
+              <span
+                class="absolute left-1/2 top-1/2 mt-0.5 text-white transform -translate-x-1/2 -translate-y-1/2"
+              >
+                02
+              </span>
+            </div>
+            <span class="mt-2 text-center text-xs font-bold md:mt-3 md:text-sm">
+              確認
+            </span>
+          </div>
+          <div
+            class="flex items-center justify-center w-12 h-12 md:w-16 md:h-14"
+          >
+            <div class="w-12 h-0.5 bg-gray-400 md:w-16"></div>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div
+              class="relative w-12 h-12 bg-white border-2 border-gray-400 rounded-full box-content md:w-14 md:h-14"
+            >
+              <span
+                class="absolute left-1/2 top-1/2 mt-0.5 text-gray-400 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                03
+              </span>
+            </div>
+            <span
+              class="mt-2 text-center text-gray-400 text-xs font-bold md:mt-3 md:text-sm"
+            >
+              完了
+            </span>
+          </div>
+        </div>
+        <div class="mx-auto px-2 max-w-lg">
+          <p class="text-center text-sm leading-6 md:text-base md:leading-7">
+            入力内容の間違いがないかご確認ください
+          </p>
+        </div>
+
+        <!-- 確認フォーム -->
+        <form class="mx-auto py-12 md:max-w-xl">
+          <ul>
+            <li class="mb-8">
+              <label class="block mb-2 text-sm font-bold" for="">お名前</label>
+              <input
+                class="block px-6 py-3 w-full bg-gray-100 rounded-lg"
+                type="text"
+                name="name_kanji"
+                placeholder="山田　花子"
+              />
+            </li>
+            <li class="mb-8">
+              <label class="block mb-2 text-sm font-bold" for=""
+                >お名前（フリガナ）</label
+              >
+              <input
+                class="block px-6 py-3 w-full bg-gray-100 rounded-lg"
+                type="text"
+                name="name_kana"
+                placeholder="ヤマダ　ハナコ"
+              />
+            </li>
+            <li class="mb-8">
+              <label class="block mb-2 text-sm font-bold" for=""
+                >メールアドレス</label
+              >
+              <input
+                class="block px-6 py-3 w-full font-sans bg-gray-100 rounded-lg"
+                type="email"
+                name="email"
+                placeholder="xxxx@tkc-holding.com"
+              />
+            </li>
+            <li class="mb-8">
+              <label class="block mb-2 text-sm font-bold" for=""
+                >電話番号</label
+              >
+              <input
+                class="block px-6 py-3 w-full font-sans tracking-widest bg-gray-100 rounded-lg"
+                type="tel"
+                name="tel"
+                placeholder="03-1234-5678"
+              />
+            </li>
+            <li class="mb-8">
+              <label class="block mb-2 text-sm font-bold" for=""
+                >会社名 / 団体名</label
+              >
+              <input
+                class="block px-6 py-3 w-full font-sans bg-gray-100 rounded-lg"
+                type="text"
+                name="company"
+                placeholder="株式会社◯◯◯◯"
+              />
+            </li>
+            <li class="mb-8">
+              <label class="block mb-2 text-sm font-bold" for=""
+                >お問合せ種別</label
+              >
+              <select
+                class="block px-6 py-3 w-full font-sans bg-gray-100 rounded-lg"
+                name="category"
+                id=""
+              >
+                <option value selected>選択してください</option>
+                <option value="HP制作のご相談">HP制作のご相談</option>
+                <option value="HPリニューアルのご相談">
+                  HPリニューアルのご相談
+                </option>
+                <option value="Webサービス新規立ち上げのご相談">
+                  Webサービス新規立ち上げのご相談
+                </option>
+                <option value="既存サービスの改善のご相談">
+                  既存サービスの改善のご相談
+                </option>
+                <option value="アプリ開発のご相談">アプリ開発のご相談</option>
+                <option value="プログラミングスクールについてのお問い合わせ">
+                  プログラミングスクールについてのお問い合わせ
+                </option>
+                <option value="業務提携・アライアンスのご相談">
+                  業務提携・アライアンスのご相談
+                </option>
+                <option value="取材・講演・イベント登壇などのご依頼">
+                  取材・講演・イベント登壇などのご依頼
+                </option>
+                <option value="採用についてのお問い合わせ">
+                  採用についてのお問い合わせ
+                </option>
+                <option value="その他お問い合わせ">その他お問い合わせ</option>
+              </select>
+            </li>
+            <li>
+              <label class="block mb-2 text-sm font-bold" for=""
+                >お問い合わせ内容</label
+              >
+              <textarea
+                class="block px-6 py-3 w-full font-sans bg-gray-100 rounded-lg"
+                name="inquery"
+                rows="8"
+                maxlength="4000"
+                placeholder="最大4000文字まで"
+              ></textarea>
+            </li>
+          </ul>
+        </form>
+
+        <!-- お問い合わせの際の注意点 -->
+        <div class="mx-auto py-10 border-t border-gray-400 md:max-w-xl">
+          <p class="mb-8 text-tkc-red text-sm font-bold">
+            お問い合わせいただく際のお願いとご注意
+          </p>
+          <p class="mb-6 text-sm leading-6">
+            お問い合わせの内容によってはお答えできない場合もございます。回答することが不適当であると当社が判断するご質問は、回答を差し控えておりますので、あらかじめご了承ください。
+          </p>
+          <p class="text-sm leading-6">
+            当社から回答としてお送りするEメールは、お問い合わせいただいたご本人への回答の目的でお送りするものです。
+            そのため、Eメールの一部または全部を転載、第三者への開示または二次利用することはご遠慮ください。
+          </p>
+        </div>
+
+        <!-- プライバシポリシー同意・確認ボタン -->
+        <div class="pb-12 md:pb-24">
+          <p class="text-center font-bold tracking-wide leading-7">
+            お問い合わせには、<a
+              class="text-yellow-500 underline"
+              target="_blank"
+              href="#"
+              >プライバシーポリシー</a
+            >への同意が必要です。
+          </p>
+          <div
+            class="flex flex-col items-center justify-center mt-8 mx-auto w-56 md:w-64"
+          >
+            <button
+              class="py-4 w-full text-white text-sm font-bold bg-tkc-red rounded-full md:text-base md:font-normal"
+            >
+              送信する
+            </button>
+            <button
+              class="mt-2 py-4 w-full text-white text-sm font-bold bg-gray-400 rounded-full md:text-base md:font-normal"
+            >
+              修正する
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 現在のページ -->
+      <div class="bg-white">
+        <div
+          class="flex items-center px-8 h-16 md:mx-auto md:max-w-3xl lg:px-0 xl:max-w-5xl"
+        >
+          <a href="#" class="text-gray-500 text-sm font-medium">Home</a>
+          <span class="mx-3 text-tkc-red text-xl font-medium">・</span>
+          <a href="#" class="text-sm font-medium">Contact</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  color: #333333;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h4,
+p {
+  font-weight: 500;
+}
+
+.bg-rounded-top {
+  background-color: #f50057;
+  width: 150vw;
+  height: 150vw;
+  border-radius: 9999px;
+}
+
+/* ナビゲーションバーのアニメーション */
+.slideUp {
+  transform: translateY(-10rem);
+  transition: transform 0.4s ease-out;
+}
+
+.slideDown {
+  transform: translateY(0);
+  transition: transform 0.4s ease-out;
+}
